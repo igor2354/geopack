@@ -1,0 +1,118 @@
+.facts-numbers {
+	padding: 0 0 100px 0;
+
+	& .facts-container {
+		background: #484d97;
+		border-radius: 50px;
+		& .number {
+			font-size: 40px;
+			line-height: 1.2;
+			font-weight: 800;
+			padding-right: 20px;
+			padding-bottom: 12px;
+			& > p {
+				font-size: 12px;
+				line-height: 1.2;
+				color: #999;
+				font-weight: 400;
+				text-align: center;
+			}
+		}
+		& .fact-header {
+			font-size: 22px;
+			line-height: 1.2;
+			font-weight: 600;
+			padding-top: 10px;
+			& ul {
+				padding-top: 10px;
+			}
+			& li {
+				font-size: 12px;
+				line-height: 1.4;
+				color: #fff;
+				font-weight: 400;
+				position: relative;
+				padding-left: 20px;
+				margin-bottom: 10px;
+				&:before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 12px;
+					height: 12px;
+					content: url("../img/checkmark-outline.svg");
+				}
+			}
+		}
+	}
+}
+
+.facts-container {
+	padding: 50px 55px 55px 55px;
+	& .facts-header {
+		margin-bottom: 45px;
+	}
+
+	& .fact-items {
+		// display: flex;
+		// flex-direction: row;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 30px;
+		& .facts-item {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+		}
+	}
+}
+
+@media (max-width: 1500px) {
+	.facts-container {
+		& .fact-items {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.facts-numbers {
+		padding: 0 0 20px 0;
+	}
+
+	.facts-container {
+		padding: 25px;
+	}
+
+	.facts-container .facts-header {
+		margin-bottom: 20px;
+	}
+
+	.facts-container .fact-items .facts-item {
+		flex-direction: column;
+	}
+
+	.facts-numbers .facts-container .number {
+		padding-bottom: 0;
+
+		& > p {
+			text-align: left;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.facts-numbers .facts-container .number {
+		font-size: 28px;
+	}
+
+	.facts-numbers .facts-container .fact-header {
+		font-size: 18px;
+	}
+
+	.facts-container .fact-items {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 15px;
+	}
+}

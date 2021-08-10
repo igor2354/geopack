@@ -1,0 +1,130 @@
+.footer {
+	margin-left: 300px;
+	padding: 40px 0;
+	background: #f7f7f9;
+
+	& a {
+		color: #484d97;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	& .footer-1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		border-bottom: 1px solid rgba(34, 34, 34, 0.07);
+		& .footer-logo {
+			flex-grow: 1;
+			flex-shrink: 0;
+			flex-basis: 230px;
+			padding: 0 15px 15px 0;
+		}
+
+		& .footer-tel {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 200px;
+			flex-shrink: 0;
+			flex-grow: 1;
+			font-size: 18px;
+			line-height: 1.4;
+			font-weight: 600;
+			text-decoration: none;
+			padding: 0 15px 15px 0;
+			& .tel {
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		& .email {
+			flex-basis: 200px;
+			flex-shrink: 0;
+			flex-grow: 1;
+			padding: 0 15px 15px 0;
+		}
+		& .footer-lacation {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 300px;
+			flex-shrink: 0;
+			flex-grow: 1;
+			padding: 0 15px 15px 0;
+		}
+
+		& .btn.callback {
+			border: 1px solid rgba(72, 77, 151, 0.15);
+			border-radius: 4px;
+			padding: 20px 40px;
+			margin-top: 15px;
+			transition: all 0.3s ease;
+			min-height: 60px;
+			font-weight: 600;
+			// flex-basis: 300px;
+			flex-shrink: 0;
+			flex-grow: 0;
+			&:hover,
+			&:active {
+				background: #484d97;
+				color: #fff;
+				border: 1px solid rgba(72, 77, 151, 0.15);
+			}
+			&:last-of-type {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	& .footer-2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 30px 0 0 0;
+		& .production-location {
+			display: flex;
+			flex-direction: row;
+			& .production-footer {
+				padding: 0 15px 15px 0;
+			}
+			& .location {
+				padding: 0 15px 15px 0;
+			}
+		}
+		& .development-wesma {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			& .development {
+				padding: 0 15px 15px 0;
+			}
+			& .wesma {
+				padding: 0 15px 15px 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.footer {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.footer .footer-2 .production-location {
+		flex-direction: column;
+	}
+
+	.footer .footer-2 .development-wesma {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}

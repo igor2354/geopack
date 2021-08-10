@@ -1,0 +1,23 @@
+.company-info {
+	background: #f8f8fa;
+	& .company-info-container {
+		padding: 35px 0;
+	}
+
+	& p {
+		font-size: 22px;
+		line-height: 1.4;
+	}
+}
+
+@media (max-width: 768px) {
+	.company-info {
+		& .company-info-container {
+			padding: 20px 0;
+		}
+
+		& p {
+			font-size: 14px;
+		}
+	}
+}
