@@ -110,6 +110,25 @@ body.lock {
 .main {
   margin-left: 300px; }
 
+.main-btn {
+  display: inline-block;
+  padding: 20px 30px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  background: #484d97;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .main-btn:hover {
+    background: #fff;
+    color: #484d97;
+    border-color: rgba(72, 77, 151, 0.15); }
+
 .bg-white {
   background: #fff; }
 
@@ -218,6 +237,45 @@ p {
 .mCS-my-theme .mCSB_scrollTools .mCSB_draggerRail {
   width: 5px !important;
   background-color: #efefef !important; }
+
+.breadcrumbs-wrap {
+  padding: 40px 0; }
+
+.breadcrumbs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 25px; }
+  .breadcrumbs-item::before {
+    content: "/";
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .breadcrumbs-item:last-child {
+    margin-right: 0; }
+    .breadcrumbs-item:last-child::before {
+      content: none; }
+
+.breadcrumbs-item a {
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000; }
+  .breadcrumbs-item a:hover {
+    text-decoration: underline; }
+
+.breadcrumbs-item span {
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.35); }
 
 .header {
   position: fixed;
@@ -1244,6 +1302,111 @@ p {
     margin-bottom: 20px; }
   .seo-text .seo-container p {
     font-size: 14px; } }
+
+.catalog-title {
+  margin-bottom: 40px; }
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px; }
+
+.catalog-card {
+  padding: 30px 35px 40px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f8f8fa;
+  border-radius: 10px; }
+
+.catalog-card-title {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #484d97; }
+
+.catalog-card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  margin-bottom: 40px; }
+
+.catalog-card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .catalog-card-item:hover .catalog-card-name {
+    text-decoration: underline; }
+
+.catalog-card-image {
+  margin-right: 10px; }
+  .catalog-card-image img {
+    min-width: 100px;
+    max-width: 100px;
+    height: 70px;
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.catalog-card-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000; }
+
+.catalog-card-button-wrap {
+  text-align: center; }
+
+.catalog-card-button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 25px; }
+
+.catalog-card-text ul {
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px; }
+
+.catalog-card-text p {
+  font-size: 12px;
+  line-height: 140%;
+  color: #999999; }
+
+.list-check li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 12px;
+  line-height: 140%;
+  color: #000000; }
+  .list-check li::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 10px;
+    height: 8px;
+    background: url("../img/icon-arrow-list-check.svg") no-repeat; }
 
 .p-100 {
   padding: 100px 0; }
