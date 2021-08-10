@@ -239,7 +239,7 @@ p {
   background-color: #efefef !important; }
 
 .breadcrumbs-wrap {
-  padding: 40px 0; }
+  padding: 60px 0 20px 0; }
 
 .breadcrumbs-list {
   display: -webkit-box;
@@ -1303,13 +1303,17 @@ p {
   .seo-text .seo-container p {
     font-size: 14px; } }
 
+.catalog-wrap {
+  padding: 20px 0 30px 0; }
+
 .catalog-title {
   margin-bottom: 40px; }
 
 .catalog-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 30px; }
+  grid-gap: 30px;
+  margin-bottom: 60px; }
 
 .catalog-card {
   padding: 30px 35px 40px 35px;
@@ -1356,7 +1360,8 @@ p {
     max-width: 100px;
     height: 70px;
     -o-object-fit: contain;
-       object-fit: contain; }
+       object-fit: contain;
+    border-radius: 10px; }
 
 .catalog-card-name {
   font-weight: 500;
@@ -1407,6 +1412,70 @@ p {
     width: 10px;
     height: 8px;
     background: url("../img/icon-arrow-list-check.svg") no-repeat; }
+
+.catalog-download {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 37px;
+  text-align: center;
+  border: 1px solid rgba(72, 77, 151, 0.15);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  color: #484d97;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .catalog-download span {
+    position: relative;
+    padding-left: 50px; }
+    .catalog-download span::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 34px;
+      height: 34px;
+      background: url("../img/icon-pdf.svg") no-repeat; }
+  .catalog-download:hover {
+    background: #484d97;
+    color: #fff; }
+    .catalog-download:hover span::before {
+      -webkit-filter: brightness(100);
+              filter: brightness(100); }
+
+.technology-wrap {
+  padding: 30px 0; }
+
+.technology-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px; }
+
+.technology-card {
+  padding: 25px 40px 40px 35px;
+  background: #f8f8fa;
+  border-radius: 10px; }
+
+.card-technology-name {
+  position: relative; }
+  .card-technology-name::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: url("../img/icon-question.svg") no-repeat center, #eeeffa; }
 
 .p-100 {
   padding: 100px 0; }

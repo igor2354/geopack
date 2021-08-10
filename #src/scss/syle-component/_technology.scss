@@ -1,0 +1,62 @@
+.technology {
+}
+
+.technology-wrap {
+	padding: 30px 0;
+}
+.technology-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 40px;
+}
+
+.technology-column {
+}
+
+.technology-title {
+}
+
+.technology-text {
+}
+
+.technology-text-row {
+}
+
+.technology-text-column {
+}
+
+.list-check {
+}
+
+.technology-text-item {
+}
+
+.technology-text-image {
+}
+
+.technology-card {
+	padding: 25px 40px 40px 35px;
+	background: #f8f8fa;
+	border-radius: 10px;
+}
+
+.card-technology {
+}
+
+.card-technology-name {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		transform: translateY(-50%);
+		background: url("../img/icon-question.svg") no-repeat center, #eeeffa;
+	}
+}
+
+.card-technology-text {
+}
