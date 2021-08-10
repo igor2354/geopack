@@ -2,36 +2,75 @@
 }
 
 .technology-wrap {
-	padding: 30px 0;
+	padding: 30px 0 60px 0;
 }
 .technology-row {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 40px;
+	grid-template-columns: 1fr 0.57fr;
+	grid-gap: 20px;
 }
 
 .technology-column {
 }
 
 .technology-title {
+	margin-bottom: 30px;
 }
 
 .technology-text {
+	& p {
+		& span {
+			color: #484d97;
+		}
+	}
+
+	& ul {
+		margin-bottom: 25px;
+		& li {
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 .technology-text-row {
+	display: grid;
+	grid-template-columns: 1fr 0.68fr;
+	grid-gap: 30px;
 }
 
 .technology-text-column {
+	& iframe {
+		width: 100%;
+		max-height: 400px;
+		height: 100%;
+		border-radius: 10px;
+		min-height: 230px;
+	}
 }
 
 .list-check {
 }
 
 .technology-text-item {
+	display: flex;
+	align-items: center;
+	& p {
+		margin-bottom: 0;
+	}
 }
 
 .technology-text-image {
+	margin-right: 15px;
+	& img {
+		width: 100%;
+		min-width: 115px;
+		height: 90px;
+		object-fit: cover;
+		border-radius: 10px;
+	}
 }
 
 .technology-card {
@@ -44,19 +83,64 @@
 }
 
 .card-technology-name {
-	position: relative;
-	&::before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 0;
-		width: 42px;
-		height: 42px;
-		border-radius: 50%;
-		transform: translateY(-50%);
-		background: url("../img/icon-question.svg") no-repeat center, #eeeffa;
-	}
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 140%;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.card-technology-name-icon {
+	display: block;
+	margin-right: 15px;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: url("../img/icon-question.svg") no-repeat center, #eeeffa;
 }
 
 .card-technology-text {
+	& ul {
+		& li {
+			margin-bottom: 25px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.technology-row {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.technology-text-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 900px) {
+	.technology-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.technology-wrap {
+		padding: 20px 0;
+	}
+
+	.technology-title {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	.technology-card {
+		padding: 20px;
+	}
 }
