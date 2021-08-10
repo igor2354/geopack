@@ -59,20 +59,23 @@
 		}
 
 		& .btn.callback {
-			border: 1px solid rgba(72, 77, 151, 0.15);
+			// border: 1px solid rgba(72, 77, 151, 0.15);
 			border-radius: 4px;
 			padding: 20px 40px;
 			margin-top: 15px;
 			transition: all 0.3s ease;
 			min-height: 60px;
 			font-weight: 600;
-			// flex-basis: 300px;
 			flex-shrink: 0;
 			flex-grow: 0;
+
+			background: #484d97;
+			color: #fff;
+			border: 1px solid rgba(72, 77, 151, 0.15);
 			&:hover,
 			&:active {
-				background: #484d97;
-				color: #fff;
+				background: #efefef;
+				color: #000;
 				border: 1px solid rgba(72, 77, 151, 0.15);
 			}
 			&:last-of-type {

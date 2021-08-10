@@ -296,7 +296,7 @@ p {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   .header-container a:hover {
-    font-size: 16px; }
+    text-decoration: none; }
 
 .header-container a.tel {
   font-size: 18px;
@@ -1002,6 +1002,8 @@ p {
                 font-size: 12px;
                 line-height: 1.5;
                 text-decoration: underline; }
+                .certification .certification-container .complaints-form .blue-container .padding-container .form-order-group .form-order-checkbox a:hover {
+                  text-decoration: none; }
             .certification .certification-container .complaints-form .blue-container .padding-container .form-order-group .main-btn {
               display: inline-block;
               position: relative;
@@ -1012,10 +1014,15 @@ p {
               font-weight: 600;
               color: #484d97;
               background: #ffffff;
+              border: 1px solid transparent;
               border-radius: 4px;
               -webkit-transition: all 0.3s ease;
               -o-transition: all 0.3s ease;
               transition: all 0.3s ease; }
+              .certification .certification-container .complaints-form .blue-container .padding-container .form-order-group .main-btn:hover {
+                color: #fff;
+                background: #484d97;
+                border-color: #fff; }
 
 @media (max-width: 1500px) {
   .certification .certification-container .complaints-form .blue-container .padding-container .form-order-row {
@@ -1325,7 +1332,6 @@ p {
               flex-grow: 1;
       padding: 0 15px 15px 0; }
     .footer .footer-1 .btn.callback {
-      border: 1px solid rgba(72, 77, 151, 0.15);
       border-radius: 4px;
       padding: 20px 40px;
       margin-top: 15px;
@@ -1338,10 +1344,13 @@ p {
           flex-shrink: 0;
       -webkit-box-flex: 0;
           -ms-flex-positive: 0;
-              flex-grow: 0; }
+              flex-grow: 0;
+      background: #484d97;
+      color: #fff;
+      border: 1px solid rgba(72, 77, 151, 0.15); }
       .footer .footer-1 .btn.callback:hover, .footer .footer-1 .btn.callback:active {
-        background: #484d97;
-        color: #fff;
+        background: #efefef;
+        color: #000;
         border: 1px solid rgba(72, 77, 151, 0.15); }
       .footer .footer-1 .btn.callback:last-of-type {
         margin-bottom: 15px; }

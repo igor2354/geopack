@@ -121,6 +121,9 @@
 								font-size: 12px;
 								line-height: 1.5;
 								text-decoration: underline;
+								&:hover {
+									text-decoration: none;
+								}
 							}
 						}
 						& .main-btn {
@@ -133,8 +136,14 @@
 							font-weight: 600;
 							color: #484d97;
 							background: #ffffff;
+							border: 1px solid transparent;
 							border-radius: 4px;
 							transition: all 0.3s ease;
+							&:hover {
+								color: #fff;
+								background: #484d97;
+								border-color: #fff;
+							}
 						}
 					}
 				}
