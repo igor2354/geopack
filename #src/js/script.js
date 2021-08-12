@@ -100,12 +100,22 @@ document.addEventListener(
 
 		const swiper_small = new Swiper(".product-swiper-container-small", {
 			// Optional parameters
-			slidesPerView: 5,
-			spaceBetween: 30,
+			slidesPerView: 3,
+			spaceBetween: 15,
 			loop: false,
 
-			
+			breakpoints: {
+				768: {
+					slidesPerView: 5,
+					spaceBetween: 30,
+				},
+				500: {
+					slidesPerView: 4,
+					spaceBetween: 30,
+				},
+			},
 		});
+		
 		const swiper_big = new Swiper(".product-swiper-container-big", {
 			// Optional parameters
 			slidesPerView: 1,

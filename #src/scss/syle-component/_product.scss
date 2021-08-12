@@ -101,13 +101,13 @@
 
 	& .product-button-prev {
 		&:after {
-			content: url("/img/icon-prev.svg")
+			content: url("../img/icon-prev.svg")
 		}
 	}
 
 	& .product-button-next {
 		&:after {
-			content: url("/img/icon-next.svg")
+			content: url("../img/icon-next.svg")
 		}
 	}
 

@@ -2197,10 +2197,10 @@ p {
     margin-bottom: 30px; }
 
 .product-page .product-button-prev:after {
-  content: url("/img/icon-prev.svg"); }
+  content: url("../img/icon-prev.svg"); }
 
 .product-page .product-button-next:after {
-  content: url("/img/icon-next.svg"); }
+  content: url("../img/icon-next.svg"); }
 
 @media (max-width: 1366px) {
   .product-page .download-container {
@@ -2344,6 +2344,19 @@ p {
   @media (max-width: 810px) {
     .application-request .order-form {
       grid-template-columns: 1fr; } }
+  @media (max-width: 768px) {
+    .application-request .form-button-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .application-request .form-column .form-button-container .form-order-checkbox {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-right: 0; } }
 
 .vacancy-wrap {
   padding: 0 0 0 0; }
