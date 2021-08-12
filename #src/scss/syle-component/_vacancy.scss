@@ -88,10 +88,16 @@
 .card-vacancy-name {
 	max-width: 300px;
 	margin-bottom: 30px;
-	font-weight: 600;
-	font-size: 22px;
-	line-height: 120%;
-	color: #484d97;
+
+	& a {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 120%;
+		color: #484d97;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .card-vacancy-category {
@@ -242,8 +248,10 @@
 	}
 
 	.card-vacancy-name {
-		font-size: 18px;
 		margin-bottom: 15px;
+		& a {
+			font-size: 18px;
+		}
 	}
 
 	.search-vacancy {
