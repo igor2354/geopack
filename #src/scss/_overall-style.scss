@@ -14,6 +14,8 @@ body.lock {
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
 .container {
@@ -40,6 +42,7 @@ body.lock {
 // }
 
 .main {
+	flex-grow: 1;
 	margin-left: 300px;
 }
 
@@ -220,7 +223,7 @@ p {
 }
 
 .breadcrumbs-wrap {
-	padding: 60px 0 10px 0;
+	padding: 25px 0 10px 0;
 }
 
 .breadcrumbs-list {
@@ -251,7 +254,7 @@ p {
 .breadcrumbs-item a {
 	font-size: 14px;
 	line-height: 150%;
-	color: #000000;
+	color: #000;
 	&:hover {
 		text-decoration: underline;
 	}
@@ -260,12 +263,12 @@ p {
 .breadcrumbs-item span {
 	font-size: 14px;
 	line-height: 150%;
-	color: rgba(0, 0, 0, 0.35);
+	color: rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {
 	.breadcrumbs-wrap {
-		padding: 20px 0 10px 0;
+		padding: 10px 0 0px 0;
 	}
 
 	.breadcrumbs-item a {
@@ -442,8 +445,9 @@ p {
 		position: relative;
 		margin: 0 auto;
 		padding: 40px 50px 35px 50px;
-		background: #484d97;
 		border-radius: 10px;
+
+		background-blend-mode: multiply, normal;
 	}
 
 	&__close {
@@ -503,7 +507,7 @@ p {
 
 	&__error {
 		margin-bottom: 15px;
-		color: #e37171;
+		color: #ff0000;
 	}
 
 	&.modal {
@@ -568,27 +572,31 @@ p {
 		padding: 20px 25px;
 		font-size: 14px;
 		line-height: 120%;
-		color: #ffffff;
-		background: #404590;
+		color: #000000;
+		background: #fff;
 		border-radius: 4px;
 
 		&::-webkit-input-placeholder {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(0, 0, 0, 0.5);
 		}
 		&::-moz-placeholder {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(0, 0, 0, 0.5);
 		}
 		&:-moz-placeholder {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(0, 0, 0, 0.5);
 		}
 		&:-ms-input-placeholder {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(0, 0, 0, 0.5);
 		}
 	}
 
 	& textarea {
 		resize: none;
 		min-height: 120px;
+	}
+
+	& .nice-select {
+		background: #fff;
 	}
 }
 
@@ -653,6 +661,11 @@ p {
 		& textarea {
 			resize: none;
 			min-height: 70px;
+		}
+
+		& .nice-select {
+			height: 38px;
+			line-height: 38px;
 		}
 	}
 

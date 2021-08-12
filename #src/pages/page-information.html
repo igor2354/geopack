@@ -26,23 +26,17 @@
                     <div class="breadcrumbs-wrap">
                         <ul class="breadcrumbs-list">
                             <li class="breadcrumbs-item"><a href="#">Главная</a></li>
-                            <li class="breadcrumbs-item"><a href="#">Гофроупаковка</a></li>
-                            <li class="breadcrumbs-item"><span>Тарный картон</span></li>
+                            <li class="breadcrumbs-item"><span>Информационная страница</span></li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="company-info-title title-h2">Гофроящики для алкогольной продукции</div>
             </div>
         </div>
     </section>
 
-
-    @@include("../components/_product.html")
-
-    @@include("../components/_application-request.html")
-
-    @@include("../components/_news.html")
+    @@include("../components/_seo-text.html", {
+    "className": "--small-padding --info-page"
+    })
 
     <div class="bg-overlay"></div>
 </main>

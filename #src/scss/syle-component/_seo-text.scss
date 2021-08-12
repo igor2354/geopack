@@ -23,6 +23,12 @@
 			padding-bottom: 60px;
 		}
 	}
+
+	&.--info-page {
+		& .seo-container {
+			padding-top: 0;
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -34,6 +40,10 @@
 	.seo-text.--small-padding .seo-container {
 		padding-top: 40px;
 		padding-bottom: 40px;
+	}
+
+	.seo-text.--info-page .seo-container {
+		padding-top: 0;
 	}
 
 	.seo-text .seo-container .title-h1 {

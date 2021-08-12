@@ -125,6 +125,8 @@
                         <li><a href="./index.html">Главная</a></li>
                         <li><a href="./page-catalog.html">Каталог</a></li>
                         <li><a href="./page-vacancy.html">Вакансии</a></li>
+                        <li><a href="./page-information.html">Информационная страница</a></li>
+                        <li><a href="./page-news.html">Страница новостей</a></li>
                     </ul>
                 </div>
 
@@ -134,7 +136,6 @@
                         <li class="js-show-popup"><a href="#popup-tender">Пригласить на тендер</a></li>
                         <li class="js-show-popup"><a href="#popup-commercial-proposal">Запросить коммерческое
                                 предложение</a></li>
-                        <li class="js-show-popup"><a href="#popup-recall">Заказать звонок</a></li>
                         <li class="js-show-popup"><a href="#popup-order">Оставить заявку</a></li>
                         <li class="js-show-popup"><a href="#popup-respond">Откликнуться</a></li>
                     </ul>
@@ -235,7 +236,7 @@
 
 <div class="popup-general modal" id="popup-tender">
 
-  <div class="popup-general__body">
+  <div class="popup-general__body" style="background: url('./img/image-modal-bg-1.png') 100% 100% / cover, #484d97;">
 
     <div class="popup-general__close js-modal-close"></div>
 
@@ -255,7 +256,23 @@
           </div>
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="text" placeholder="Ваша почта">
+            <input type="text" placeholder="Ваш e-mail">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input-modal">
+            <select name="">
+              <option value="Выберите точку самовывоза">Закупки</option>
+
+              <option value="Выберите точку самовывоза">Закупки 1</option>
+
+              <option value="Выберите точку самовывоза">Закупки 1</option>
+
+              <option value="Выберите точку самовывоза">Закупки 1</option>
+            </select>
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input-modal">
+            <textarea placeholder="Ваше сообщение"></textarea>
           </div>
       </div>
 
@@ -278,7 +295,7 @@
 
 <div class="popup-general modal" id="popup-commercial-proposal">
 
-  <div class="popup-general__body">
+  <div class="popup-general__body" style="background: url('./img/image-modal-bg-2.png') 100% 100% / cover, #484d97;">
 
     <div class="popup-general__close js-modal-close"></div>
 
@@ -298,51 +315,15 @@
           </div>
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="text" placeholder="Ваша почта">
-          </div>
-      </div>
-
-      <div class="form-popup-general__wrap-button">
-        <button type="submit" class="form-popup-general__submit">Отправить</button>
-      </div>
-
-      <div class="form-popup-general__subtext">
-        Согласен на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a>
-        </from>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="popup-general modal" id="popup-recall">
-
-  <div class="popup-general__body">
-
-    <div class="popup-general__close js-modal-close"></div>
-
-    <div class="popup-general__group-title">
-      <div class="popup-general__title">Заказать звонок</div>
-    </div>
-
-    <div class="popup-general__wrap">
-      <div class="form-popup-general__lsit">
-        <from action="#" class="popup-general__form form-popup-general">
-          <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш e-mail">
           </div>
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
-            <textarea placeholder="Тема обращения"></textarea>
+            <input type="text" placeholder="Ваша компания">
           </div>
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="tel" placeholder="Ваш телефон">
-          </div>
-
-          <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="text" placeholder="Ваша почта">
+            <input type="text" placeholder="Размер, марка, количество">
           </div>
       </div>
 
@@ -362,7 +343,7 @@
 
 <div class="popup-general modal" id="popup-order">
 
-  <div class="popup-general__body">
+  <div class="popup-general__body" style="background: url('./img/image-modal-bg-3.png') 100% 100% / cover, #484d97;">
 
     <div class="popup-general__close js-modal-close"></div>
 
@@ -382,7 +363,15 @@
           </div>
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="text" placeholder="Ваша почта">
+            <input type="text" placeholder="Ваш e-mail">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input-modal">
+            <input type="text" placeholder="Ваша компания">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input-modal">
+            <textarea placeholder="Ваше сообщение"></textarea>
           </div>
       </div>
 
@@ -402,7 +391,7 @@
 
 <div class="popup-general modal" id="popup-respond">
 
-  <div class="popup-general__body">
+  <div class="popup-general__body" style="background: url('./img/image-modal-bg-4.png') 100% 100% / cover, #484d97;">
 
     <div class="popup-general__close js-modal-close"></div>
 
@@ -419,6 +408,10 @@
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
             <input type="tel" placeholder="Ваш телефон">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input-modal">
+            <input type="text" placeholder="Ваш e-mail">
           </div>
       </div>
 
