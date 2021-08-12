@@ -16,10 +16,22 @@
 			font-weight: 600px;
 		}
 	}
+
+	&.--small-padding {
+		& .seo-container {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+	}
 }
 
 @media (max-width: 768px) {
 	.seo-text .seo-container {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.seo-text.--small-padding .seo-container {
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}

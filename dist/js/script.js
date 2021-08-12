@@ -68,6 +68,28 @@ $(document).ready(function () {
 		}
 		setTimeout(animOnScroll, 0);
 	}
+
+	$("select").niceSelect();
+
+	//Попапы
+	$(".js-show-popup a").on("click", function (e) {
+		e.preventDefault();
+		$(".modal").fadeOut();
+
+		$(".popup-overlay").fadeIn();
+		$($(this).attr("href")).fadeIn();
+		$($(this).attr("href")).css({ "max-height": $(window).height() });
+	});
+
+	$(".js-modal-close").on("click", function (e) {
+		$(this).parents(".modal").fadeOut();
+		$(".popup-overlay").fadeOut();
+	});
+
+	$(".popup-overlay").on("click", function (e) {
+		$(".modal").fadeOut();
+		$(this).fadeOut();
+	});
 });
 
 // скрипт слайдера
