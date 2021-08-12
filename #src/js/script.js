@@ -68,4 +68,6 @@ $(document).ready(function () {
 		}
 		setTimeout(animOnScroll, 0);
 	}
+
+	$("select").niceSelect();
 });
