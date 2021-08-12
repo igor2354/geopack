@@ -14,6 +14,7 @@
         grid-template-columns: 0.8fr 1.2fr;
         grid-gap: 20px;
         justify-content: space-between;
+        flex-wrap: wrap;
         & .wrap-input {
             display: flex;
             flex-direction: column;
@@ -34,7 +35,6 @@
                     opacity: 0.6;
                 }
             }
-            
         }
     }
 
@@ -49,7 +49,9 @@
             // font-size: 16px;
             // resize: none;
             // border-radius: 4px;
+            border-radius: 4px;
             background: #EDEDF4;
+            margin-bottom: 25px;
             & textarea {
                 height: 100%;
                 width: 100%;
@@ -75,6 +77,13 @@
         }
         & .main-btn {
             padding: 20px 90px;
+        }
+    }
+
+    @media (max-width: 810px) {
+        & .order-form {
+            grid-template-columns: 1fr;
+            // grid-template-rows: 1fr 1fr;
         }
     }
 }

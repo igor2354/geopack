@@ -2004,12 +2004,12 @@ p {
     margin-bottom: 15px;
     font-size: 18px; } }
 
-<<<<<<< HEAD
 .product-page .title-1 {
   margin-bottom: 40px; }
 
 .product-page .button-container {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  width: 100%; }
 
 .product-page .submit-application {
   border-radius: 4px;
@@ -2054,12 +2054,14 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 20px;
-  width: 345px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   .product-page .download-link svg {
     margin-right: 12px; }
+  .product-page .download-link .download-icon {
+    width: auto;
+    min-width: 30px; }
   .product-page .download-link:hover, .product-page .download-link:active {
     background: #484d97;
     color: #fff;
@@ -2083,7 +2085,7 @@ p {
           align-items: center;
   margin-bottom: 30px; }
   .product-page .download-container span {
-    padding-right: 30px; }
+    padding-right: 10px; }
 
 .product-page h2 {
   text-transform: inherit;
@@ -2097,12 +2099,25 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
-  .product-page .product__row .product__column {
+  .product-page .product__row .product-slider {
     width: 60%;
     margin-bottom: 15px; }
-    .product-page .product__row .product__column:nth-child(2) {
-      width: 40%;
-      margin-left: 60px; }
+    .product-page .product__row .product-slider .product-swiper-slide-big {
+      text-align: center; }
+  .product-page .product__row .product-info {
+    width: 40%;
+    padding-left: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* justify-content: center; */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .product-page .product__row .slider-big {
     margin-bottom: 30px; }
 
@@ -2111,6 +2126,37 @@ p {
 
 .product-page .product-button-next:after {
   content: url("/img/icon-next.svg"); }
+
+@media (max-width: 1366px) {
+  .product-page .download-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .product-page .download-container span {
+      text-align: center;
+      margin-bottom: 5px; } }
+
+@media (max-width: 900px) {
+  .product-page .product__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .product-page .product__row .product-slider {
+      width: 100%; }
+    .product-page .product__row .product-info {
+      text-align: left;
+      width: 100%;
+      padding-left: 0; }
+  .product-page .button-container {
+    width: auto;
+    min-width: 500px; } }
+
+@media (max-width: 500px) {
+  .product-page .button-container {
+    min-width: 100%; } }
 
 .application-request {
   background: #F8F8FA; }
@@ -2126,7 +2172,9 @@ p {
     grid-gap: 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .application-request .order-form .wrap-input {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2178,7 +2226,9 @@ p {
       height: 100%;
       width: 100%;
       padding: 25px 22px;
-      background: #EDEDF4; }
+      border-radius: 4px;
+      background: #EDEDF4;
+      margin-bottom: 25px; }
       .application-request .form-column .wrap-input-textarea textarea {
         height: 100%;
         width: 100%;
@@ -2216,7 +2266,10 @@ p {
         padding-right: 20px; }
     .application-request .form-column .main-btn {
       padding: 20px 90px; }
-=======
+  @media (max-width: 810px) {
+    .application-request .order-form {
+      grid-template-columns: 1fr; } }
+
 .vacancy-wrap {
   padding: 20px 0 0 0; }
 
@@ -2449,7 +2502,6 @@ p {
     font-size: 18px; }
   .career-phone {
     font-size: 18px; } }
->>>>>>> 9ab6471d48b7584564ccc3d75e2fb8e1186a2df3
 
 .p-100 {
   padding: 100px 0; }
