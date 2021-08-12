@@ -14,6 +14,8 @@ body.lock {
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
 .container {
@@ -40,6 +42,7 @@ body.lock {
 // }
 
 .main {
+	flex-grow: 1;
 	margin-left: 300px;
 }
 

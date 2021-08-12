@@ -116,67 +116,41 @@
         </div>
     </div>
 
-    <div class="page-navigation">
-        <div class="container">
-            <div class="page-navigation__row">
-                <div class="page-navigation__column">
-                    <div class="page-navigation__title title-h2">Страницы</div>
-                    <ul>
-                        <li><a href="./index.html">Главная</a></li>
-                        <li><a href="./page-catalog.html">Каталог</a></li>
-                        <li><a href="./page-vacancy.html">Вакансии</a></li>
-                        <li><a href="./page-information.html">Информационная страница</a></li>
-                    </ul>
-                </div>
+    <section class="company-info grid-main">
 
-                <div class="page-navigation__column">
-                    <div class="page-navigation__title title-h2">Попапы</div>
-                    <ul>
-                        <li class="js-show-popup"><a href="#popup-tender">Пригласить на тендер</a></li>
-                        <li class="js-show-popup"><a href="#popup-commercial-proposal">Запросить коммерческое
-                                предложение</a></li>
-                        <li class="js-show-popup"><a href="#popup-order">Оставить заявку</a></li>
-                        <li class="js-show-popup"><a href="#popup-respond">Откликнуться</a></li>
-                    </ul>
+        <div class="container">
+            <div class="company-info-container">
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs-wrap">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+                            <li class="breadcrumbs-item"><span>Информационная страница</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="seo-text grid-main --small-padding --info-page">
+  <div class="container">
+    <div class="seo-container">
+      <h1 class="title-h1">Заголовок H1 для SEO</h1>
+      <div class="grey-text">
+        <p>Компания <strong>«ГеоПак»</strong> выпускает гофроупаковку с 1999 года. Собственное производство
+          гофрокартона располагается в 37км от Москвы по Ярославскому шоссе - городе Красноармейск.
+        </p>
+        <p>Основные производственные мощности предприятия изначально обеспечили изготовление <strong>полного</strong>
+          технологического цикла <strong>производства гофротары</strong> от выпуска <strong>гофрокартона</strong> до
+          широкого ассортимента <strong>гофрокоробов</strong> и других изделий.
+        </p>
+        <p>Основные наши клиенты - это крупные производственные предприятия- производители товаров народного
+          потребления. И поэтому мы обращаем внимание на удобство работы и быстроту обслуживания заказов, гарантии
+          качества и стабильность поставок.
+        </p>
+      </div>
     </div>
-
-    <style>
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .wrapper .main {
-            flex-grow: 1;
-        }
-
-        .page-navigation {
-            padding: 100px 0;
-        }
-
-        .page-navigation__title {
-            margin-bottom: 30px;
-        }
-
-        .page-navigation__row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .page-navigation__column ul li {
-            margin-bottom: 20px;
-        }
-
-        .page-navigation__column ul li a {
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 120%;
-            color: #484D97;
-        }
-    </style>
+</section>
 
     <div class="bg-overlay"></div>
 </main>
