@@ -1,0 +1,80 @@
+.application-request {
+    background: #F8F8FA;
+    & .application-container {
+        padding: 60px 0 70px 0;
+    }
+    & .application-header {
+        margin-bottom: 40px;
+        & .title-h2 {
+            margin-bottom: 30px;
+        }
+    }
+    & .order-form {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        grid-gap: 20px;
+        justify-content: space-between;
+        & .wrap-input {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            & input {
+                width: 100%;
+                padding: 21px 25px;
+                font-size: 14px;
+                line-height: 1.2;
+                border-radius: 4px;
+                background: #EDEDF4;
+                &::placeholder {
+                    color: #000;
+                    opacity: 0.6;
+                }
+            }
+            
+        }
+    }
+
+    & .form-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & .wrap-input-textarea {
+            height: 100%;
+            width: 100%;
+            padding: 25px 22px;
+            // font-size: 16px;
+            // resize: none;
+            // border-radius: 4px;
+            background: #EDEDF4;
+            & textarea {
+                height: 100%;
+                width: 100%;
+                font-size: 16px;
+                resize: none;
+                border-radius: 4px;
+                background: #EDEDF4;
+            }
+            &::placeholder {
+                color: #000;
+                opacity: 0.6;
+            }
+            
+        }
+        & .form-button-container {
+            display: flex;
+            align-items: center;
+            justify-content:flex-end;
+            & .form-order-checkbox {
+                text-align: end;
+                padding-right: 20px;
+            }
+        }
+        & .main-btn {
+            padding: 20px 90px;
+        }
+    }
+}

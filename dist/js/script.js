@@ -91,3 +91,37 @@ $(document).ready(function () {
 		$(this).fadeOut();
 	});
 });
+
+// скрипт слайдера
+
+document.addEventListener(
+	"DOMContentLoaded",
+	function () {
+
+		const swiper_small = new Swiper(".product-swiper-container-small", {
+			// Optional parameters
+			slidesPerView: 5,
+			spaceBetween: 30,
+			loop: false,
+
+			
+		});
+		const swiper_big = new Swiper(".product-swiper-container-big", {
+			// Optional parameters
+			slidesPerView: 1,
+			spaceBetween: 30,
+			loop: false,
+
+			// Navigation arrows
+			navigation: {
+				nextEl: ".product-button-next",
+				prevEl: ".product-button-prev",
+			},
+
+			thumbs: {
+				swiper: swiper_small,
+			},
+		});
+	},
+	false
+);

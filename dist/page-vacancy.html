@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/lightgallery.min.css">
   <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/nice-select.css">
   <link rel="stylesheet" href="./css/style.css" />
   <title>Document</title>
@@ -117,10 +118,14 @@
 
 
 
-    <section class="company-info grid-main">
+    <section class="company-info grid-main --bg-image">
+
+        <div class="company-info-image-bg">
+            <img class="" src="./img/image-bg-vac.png" alt="">
+        </div>
+
         <div class="container">
             <div class="company-info-container">
-
                 <div class="breadcrumbs">
                     <div class="breadcrumbs-wrap">
                         <ul class="breadcrumbs-list">
@@ -130,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="vacancy-title title-h2">Вакансии</div>
+                <div class="company-info-title title-h2">Вакансии</div>
             </div>
         </div>
     </section>
@@ -485,7 +490,7 @@
 
 <div class="popup-general modal" id="popup-tender">
 
-  <div class="popup-general__body">
+  <div class="popup-general__body" style="background: url('../img/image-modal-bg-1.png') 100% 100% / cover, #484d97;">
 
     <div class="popup-general__close js-modal-close"></div>
 
@@ -505,7 +510,23 @@
           </div>
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="text" placeholder="Ваша почта">
+            <input type="text" placeholder="Ваш e-mail">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input-modal">
+            <select name="">
+              <option value="Выберите точку самовывоза">Закупки</option>
+
+              <option value="Выберите точку самовывоза">Закупки 1</option>
+
+              <option value="Выберите точку самовывоза">Закупки 1</option>
+
+              <option value="Выберите точку самовывоза">Закупки 1</option>
+            </select>
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input-modal">
+            <textarea placeholder="Ваше сообщение"></textarea>
           </div>
       </div>
 
@@ -528,7 +549,7 @@
 
 <div class="popup-general modal" id="popup-commercial-proposal">
 
-  <div class="popup-general__body">
+  <div class="popup-general__body" style="background: url('../img/image-modal-bg-2.png') 100% 100% / cover, #484d97;">
 
     <div class="popup-general__close js-modal-close"></div>
 
@@ -548,51 +569,15 @@
           </div>
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="text" placeholder="Ваша почта">
-          </div>
-      </div>
-
-      <div class="form-popup-general__wrap-button">
-        <button type="submit" class="form-popup-general__submit">Отправить</button>
-      </div>
-
-      <div class="form-popup-general__subtext">
-        Согласен на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a>
-        </from>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="popup-general modal" id="popup-recall">
-
-  <div class="popup-general__body">
-
-    <div class="popup-general__close js-modal-close"></div>
-
-    <div class="popup-general__group-title">
-      <div class="popup-general__title">Заказать звонок</div>
-    </div>
-
-    <div class="popup-general__wrap">
-      <div class="form-popup-general__lsit">
-        <from action="#" class="popup-general__form form-popup-general">
-          <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш e-mail">
           </div>
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
-            <textarea placeholder="Тема обращения"></textarea>
+            <input type="text" placeholder="Ваша компания">
           </div>
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="tel" placeholder="Ваш телефон">
-          </div>
-
-          <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="text" placeholder="Ваша почта">
+            <input type="text" placeholder="Размер, марка, количество">
           </div>
       </div>
 
@@ -612,7 +597,7 @@
 
 <div class="popup-general modal" id="popup-order">
 
-  <div class="popup-general__body">
+  <div class="popup-general__body" style="background: url('../img/image-modal-bg-3.png') 100% 100% / cover, #484d97;">
 
     <div class="popup-general__close js-modal-close"></div>
 
@@ -632,7 +617,15 @@
           </div>
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
-            <input type="text" placeholder="Ваша почта">
+            <input type="text" placeholder="Ваш e-mail">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input-modal">
+            <input type="text" placeholder="Ваша компания">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input-modal">
+            <textarea placeholder="Ваше сообщение"></textarea>
           </div>
       </div>
 
@@ -652,7 +645,7 @@
 
 <div class="popup-general modal" id="popup-respond">
 
-  <div class="popup-general__body">
+  <div class="popup-general__body" style="background: url('../img/image-modal-bg-4.png') 100% 100% / cover, #484d97;">
 
     <div class="popup-general__close js-modal-close"></div>
 
@@ -669,6 +662,10 @@
 
           <div class="form-popup-general__wrap-input wrap-input-modal">
             <input type="tel" placeholder="Ваш телефон">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input-modal">
+            <input type="text" placeholder="Ваш e-mail">
           </div>
       </div>
 
@@ -695,6 +692,7 @@
 <script src="./js/lightgallery-all.min.js"></script>
 <script src="./js/jquery.mCustomScrollbar.js"></script>
 <script src="./js/jquery.inputmask.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/jquery.nice-select.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
