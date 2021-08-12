@@ -2109,8 +2109,31 @@ p {
   max-width: 260px; }
 
 .career-wrap {
+  position: relative;
   background: #f8f8fa;
   border-radius: 10px; }
+
+.career-image-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; }
+  .career-image-bg img {
+    width: 100%;
+    height: 100%; }
+  .career-image-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    border-radius: 10px; }
 
 .career-row {
   padding: 40px 50px;
@@ -2130,17 +2153,20 @@ p {
     background: rgba(0, 0, 0, 0.07); }
 
 .career-title {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  color: #fff; }
 
-.career-text p:last-child {
-  margin-bottom: 0; }
+.career-text p {
+  color: #fff; }
+  .career-text p:last-child {
+    margin-bottom: 0; }
 
 .career-name {
   margin-bottom: 30px;
   font-weight: 600;
   font-size: 22px;
   line-height: 120%;
-  color: #000000; }
+  color: #fff; }
 
 .career-phone {
   display: inline-block;
@@ -2148,7 +2174,7 @@ p {
   font-weight: 600;
   font-size: 22px;
   line-height: 120%;
-  color: #484d97; }
+  color: #fff; }
 
 @media (max-width: 1400px) {
   .card-vacancy-group-three {

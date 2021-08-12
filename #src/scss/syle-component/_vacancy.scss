@@ -149,8 +149,33 @@
 }
 
 .career-wrap {
+	position: relative;
 	background: #f8f8fa;
 	border-radius: 10px;
+}
+
+.career-image-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	& img {
+		width: 100%;
+		height: 100%;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+		border-radius: 10px;
+	}
 }
 
 .career-row {
@@ -177,10 +202,12 @@
 
 .career-title {
 	margin-bottom: 30px;
+	color: #fff;
 }
 
 .career-text {
 	& p {
+		color: #fff;
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -192,7 +219,7 @@
 	font-weight: 600;
 	font-size: 22px;
 	line-height: 120%;
-	color: #000000;
+	color: #fff;
 }
 
 .career-phone {
@@ -201,7 +228,7 @@
 	font-weight: 600;
 	font-size: 22px;
 	line-height: 120%;
-	color: #484d97;
+	color: #fff;
 }
 
 @media (max-width: 1400px) {
