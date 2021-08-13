@@ -1009,7 +1009,8 @@ p {
       .facts-numbers .facts-container .number > p {
         font-size: 12px;
         line-height: 1.2;
-        color: #999;
+        color: #fff;
+        opacity: 0.5;
         font-weight: 400;
         text-align: center; }
     .facts-numbers .facts-container .fact-header {
@@ -1104,11 +1105,16 @@ p {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    margin-bottom: 60px; }
   .production .production-container .production__tab-button {
-    padding-right: 40px; }
+    margin-right: 40px; }
+    .production .production-container .production__tab-button:hover, .production .production-container .production__tab-button:active {
+      text-decoration: underline; }
     .production .production-container .production__tab-button:last-child {
       padding-right: 0; }
+      .production .production-container .production__tab-button:last-child:hover, .production .production-container .production__tab-button:last-child:active {
+        text-decoration: underline; }
   .production .production-container .tab-container {
     display: -webkit-box;
     display: -ms-flexbox;

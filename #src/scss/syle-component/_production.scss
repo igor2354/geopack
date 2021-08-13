@@ -22,13 +22,23 @@
 		& .production__tab-control {
 			display: flex;
 			flex-wrap: wrap;
+			margin-bottom: 60px;
 		}
 
 		& .production__tab-button {
-			padding-right: 40px;
+			margin-right: 40px;
+			&:hover,
+			&:active {
+				text-decoration: underline;
+				}
 			&:last-child {
 				padding-right: 0;
+				&:hover,
+				&:active {
+				text-decoration: underline;
+				}
 			}
+			
 		}
 
 		& .tab-container {
