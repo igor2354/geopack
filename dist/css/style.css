@@ -1273,7 +1273,8 @@ p {
         line-height: 1.5; }
       .partnership .partnership-container .partnership-text .our-partners {
         background: #ffffff;
-        border-radius: 4px; }
+        border-radius: 4px;
+        margin-top: 30px; }
         .partnership .partnership-container .partnership-text .our-partners > div {
           margin: 35px 45px; }
         .partnership .partnership-container .partnership-text .our-partners .title-h2 {
@@ -1376,7 +1377,14 @@ p {
             width: 170px;
             display: block;
             margin-left: auto;
-            margin-right: auto; }
+            margin-right: auto;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
+            .certification .certification-container .sertificate-list .sertificate-item .cut-img .sertificate-img:hover, .certification .certification-container .sertificate-list .sertificate-item .cut-img .sertificate-img:active {
+              -webkit-transform: scale(1.02);
+                  -ms-transform: scale(1.02);
+                      transform: scale(1.02); }
         .certification .certification-container .sertificate-list .sertificate-item .grey-round-square {
           position: absolute;
           width: 90%;
@@ -1630,12 +1638,21 @@ p {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-    .news a a.news-link {
-      display: block; }
+    .news a.news-link {
+      display: block;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
 
-.article-link:hover,
-.news-link:hover {
-  text-decoration: underline; }
+.article-link,
+.news-link {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .article-link:hover, .article-link:active,
+  .news-link:hover,
+  .news-link:active {
+    text-decoration: underline; }
 
 .news-item {
   position: relative;

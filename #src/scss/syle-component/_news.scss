@@ -110,15 +110,19 @@
 		color: #fff;
 		transition: all 0.3s ease;
 
-		& a.news-link {
+		&.news-link {
 			display: block;
+			transition: all 0.3s ease;
 		}
 	}
 }
-
-.article-link:hover,
-.news-link:hover {
-	text-decoration: underline;
+.article-link,
+.news-link {
+	transition: all 0.5s ease;
+	&:hover,
+	&:active {
+		text-decoration: underline;
+	}
 }
 
 .news-item {
