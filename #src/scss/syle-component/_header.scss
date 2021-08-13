@@ -11,6 +11,12 @@
 		// & a:last-of-type {
 		// 	margin-bottom: 15px;
 		// }
+		& span {
+			line-height: 1.5;
+		}
+		& .grey-text {
+			margin-bottom: 5px;
+		}
 	}
 
 	& .btn {
@@ -106,7 +112,7 @@
 }
 
 .main-menu {
-	margin: 35px 0 20px 0;
+	margin: 25px 0 20px 0;
 }
 
 .menu-item {

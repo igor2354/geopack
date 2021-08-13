@@ -35,19 +35,19 @@
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
-			margin: 40px -20px 0 -20px;
+			margin: 40px -40px 0 -40px;
 			& .production-item {
 				display: flex;
 				flex-direction: column;
-				padding-right: 20px;
-				padding-left: 20px;
+				padding-right: 40px;
+				padding-left: 40px;
 				border-right: 1px solid rgba(34, 34, 34, 0.07);
 				width: 32%;
 				margin-bottom: 60px;
 
 				& .item-image-link {
 					flex-grow: 1;
-					margin-bottom: 30px;
+					// margin-bottom: 30px;
 					color: #333;
 					&:hover {
 						text-decoration: underline;

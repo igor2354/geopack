@@ -651,6 +651,10 @@ p {
   .header .header-container {
     margin: 0 auto;
     padding: 25px 30px; }
+    .header .header-container span {
+      line-height: 1.5; }
+    .header .header-container .grey-text {
+      margin-bottom: 5px; }
   .header .btn {
     border: 1px solid rgba(72, 77, 151, 0.15);
     border-radius: 4px;
@@ -738,7 +742,7 @@ p {
   margin-bottom: 15px; }
 
 .main-menu {
-  margin: 35px 0 20px 0; }
+  margin: 25px 0 20px 0; }
 
 .menu-item {
   -webkit-transition: all 0.3s ease;
@@ -1115,7 +1119,7 @@ p {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 40px -20px 0 -20px; }
+    margin: 40px -40px 0 -40px; }
     .production .production-container .tab-container .production-item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1124,8 +1128,8 @@ p {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding-right: 20px;
-      padding-left: 20px;
+      padding-right: 40px;
+      padding-left: 40px;
       border-right: 1px solid rgba(34, 34, 34, 0.07);
       width: 32%;
       margin-bottom: 60px; }
@@ -1133,7 +1137,6 @@ p {
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
                 flex-grow: 1;
-        margin-bottom: 30px;
         color: #333; }
         .production .production-container .tab-container .production-item .item-image-link:hover {
           text-decoration: underline; }
