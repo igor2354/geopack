@@ -90,6 +90,22 @@ $(document).ready(function () {
 		$(".modal").fadeOut();
 		$(this).fadeOut();
 	});
+
+	$(window).on("load", function() {
+		$.each($(".news-item"), function(index, val) {
+			let heightDesc = $(val).find(".news-description").outerHeight(true) - 10;
+			$(val).find(".news-title").css({"bottom":  "-" + (heightDesc) + "px"});
+		});
+		
+		$(window).on("resize", function() {
+			$.each($(".news-item"), function(index, val) {
+				let heightDesc = $(val).find(".news-description").outerHeight(true) - 10;
+				$(val).find(".news-title").css({"bottom":  "-" + (heightDesc) + "px"});
+			});
+		})
+	})
+
+
 });
 
 // скрипт слайдера
