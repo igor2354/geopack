@@ -9,6 +9,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
+	margin-bottom: 40px;
 }
 
 .page-news-item {
@@ -23,6 +24,10 @@
 @media (max-width: 768px) {
 	.page-news-wrap {
 		padding: 10px 0 10px 0;
+	}
+
+	.page-news-list {
+		margin-bottom: 20px;
 	}
 }
 

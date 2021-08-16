@@ -36,10 +36,10 @@
   content: "";
   display: block;
   height: 5px;
-  margin-top: -4px;
+  margin-top: -5px;
   pointer-events: none;
   position: absolute;
-  right: 12px;
+  right: 28px;
   top: 50%;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;

@@ -35,8 +35,9 @@
 
 .catalog-card-list {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 0.8fr 1fr;
 	grid-gap: 25px;
+
 	margin-bottom: 40px;
 }
 
@@ -45,7 +46,9 @@
 	align-items: center;
 	&:hover {
 		& .catalog-card-name {
-			text-decoration: underline;
+			& span {
+				border-color: #000;
+			}
 		}
 	}
 }
@@ -62,10 +65,15 @@
 }
 
 .catalog-card-name {
+	display: inline-block;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 150%;
 	color: #000000;
+	& span {
+		transition: all 0.3s ease;
+		border-bottom: 1px solid transparent;
+	}
 }
 
 .catalog-card-button-wrap {
@@ -81,9 +89,9 @@
 
 .catalog-card-text {
 	& ul {
-		margin-bottom: 25px;
+		margin-bottom: 42px;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 0.89fr 1fr;
 		grid-gap: 15px;
 	}
 	& p {

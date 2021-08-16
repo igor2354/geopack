@@ -5,36 +5,45 @@
 		background: #484d97;
 		border-radius: 50px;
 		& .number {
-			font-size: 40px;
-			line-height: 1.2;
-			font-weight: 800;
 			padding-right: 20px;
-			padding-bottom: 12px;
+			& span {
+				display: block;
+				margin-bottom: 12px;
+				font-size: 40px;
+				line-height: 120%;
+				font-weight: 800;
+				font-feature-settings: "tnum" on, "lnum" on;
+			}
 			& > p {
+				margin-bottom: 0;
 				font-size: 12px;
-				line-height: 1.2;
-				color: #fff;
-				opacity: 0.5;
+				line-height: 120%;
+				color: rgba(255, 255, 255, 0.5);
 				font-weight: 400;
 				text-align: center;
 			}
 		}
 		& .fact-header {
-			font-size: 22px;
-			line-height: 1.2;
-			font-weight: 600;
-			padding-top: 10px;
+			padding-top: 11px;
+
+			& span {
+				font-size: 22px;
+				line-height: 120%;
+				font-weight: 600;
+			}
+
 			& ul {
-				padding-top: 10px;
+				padding-top: 21px;
+				max-width: 136px;
 			}
 			& li {
 				font-size: 12px;
-				line-height: 1.4;
+				line-height: 140%;
 				color: #fff;
 				font-weight: 400;
 				position: relative;
-				padding-left: 20px;
-				margin-bottom: 10px;
+				padding-left: 22px;
+				margin-bottom: 17px;
 				&:before {
 					content: "";
 					position: absolute;
@@ -44,6 +53,10 @@
 					height: 12px;
 					content: url("../img/checkmark-outline.svg");
 				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
@@ -52,19 +65,28 @@
 .facts-container {
 	padding: 50px 55px 55px 55px;
 	& .facts-header {
-		margin-bottom: 45px;
+		margin-bottom: 40px;
 	}
 
 	& .fact-items {
-		// display: flex;
-		// flex-direction: row;
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: minmax(auto, 213px) minmax(auto, 267px) minmax(auto, 232px) minmax(auto, 267px);
 		grid-gap: 30px;
 		& .facts-item {
 			display: flex;
 			flex-direction: row;
 			align-items: flex-start;
+
+			&:nth-child(1) {
+				& .fact-header .fact-list {
+					& li {
+						margin-bottom: 13px;
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -75,6 +97,20 @@
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
+
+	.facts-numbers .facts-container .fact-header ul {
+		max-width: initial;
+	}
+}
+
+@media (max-width: 1170px) {
+	.facts-numbers .facts-container .number span {
+		@include adaptiv-font(40, 18);
+	}
+
+	.facts-numbers .facts-container .fact-header span {
+		@include adaptiv-font(22, 16);
+	}
 }
 
 @media (max-width: 768px) {
@@ -83,7 +119,11 @@
 	}
 
 	.facts-container {
-		padding: 25px;
+		padding: 15px;
+	}
+
+	.facts-numbers .facts-container {
+		border-radius: 25px;
 	}
 
 	.facts-container .facts-header {
@@ -100,6 +140,14 @@
 		& > p {
 			text-align: left;
 		}
+	}
+
+	.facts-numbers .facts-container .number span {
+		margin-bottom: 5px;
+	}
+
+	.facts-numbers .facts-container .fact-header ul {
+		padding-top: 10px;
 	}
 }
 

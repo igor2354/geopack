@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 	$(".header").mCustomScrollbar({
 		theme: "my-theme",
-		scrollInertia: 300,
+		scrollInertia: 100,
 	});
 
 	// МАСКА ТЕЛЕФОНА
@@ -91,21 +91,23 @@ $(document).ready(function () {
 		$(this).fadeOut();
 	});
 
-	$(window).on("load", function() {
-		$.each($(".news-item"), function(index, val) {
+	$(window).on("load", function () {
+		$.each($(".news-item"), function (index, val) {
 			let heightDesc = $(val).find(".news-description").outerHeight(true) - 10;
-			$(val).find(".news-title").css({"bottom":  "-" + (heightDesc) + "px"});
+			$(val)
+				.find(".news-title")
+				.css({ bottom: "-" + heightDesc + "px" });
 		});
-		
-		$(window).on("resize", function() {
-			$.each($(".news-item"), function(index, val) {
+
+		$(window).on("resize", function () {
+			$.each($(".news-item"), function (index, val) {
 				let heightDesc = $(val).find(".news-description").outerHeight(true) - 10;
-				$(val).find(".news-title").css({"bottom":  "-" + (heightDesc) + "px"});
+				$(val)
+					.find(".news-title")
+					.css({ bottom: "-" + heightDesc + "px" });
 			});
-		})
-	})
-
-
+		});
+	});
 });
 
 // скрипт слайдера
@@ -113,7 +115,6 @@ $(document).ready(function () {
 document.addEventListener(
 	"DOMContentLoaded",
 	function () {
-
 		const swiper_small = new Swiper(".product-swiper-container-small", {
 			// Optional parameters
 			slidesPerView: 3,
@@ -131,7 +132,7 @@ document.addEventListener(
 				},
 			},
 		});
-		
+
 		const swiper_big = new Swiper(".product-swiper-container-big", {
 			// Optional parameters
 			slidesPerView: 1,

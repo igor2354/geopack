@@ -6,25 +6,33 @@
 }
 .technology-row {
 	display: grid;
-	grid-template-columns: 1fr 0.57fr;
-	grid-gap: 20px;
+	grid-template-columns: 1fr 0.53fr;
+	grid-gap: 40px;
 }
 
 .technology-column {
 }
 
 .technology-title {
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 }
 
 .technology-text {
+	& > p {
+		max-width: 700px;
+	}
+
 	& p {
+		&:last-child {
+			margin-bottom: 0;
+		}
 		& span {
 			color: #484d97;
 		}
 	}
 
 	& ul {
+		margin-top: 25px;
 		margin-bottom: 25px;
 		& li {
 			margin-bottom: 15px;
@@ -37,8 +45,9 @@
 
 .technology-text-row {
 	display: grid;
-	grid-template-columns: 1fr 0.68fr;
+	grid-template-columns: 1fr 0.78fr;
 	grid-gap: 30px;
+	margin-top: 30px;
 }
 
 .technology-text-column {
@@ -66,7 +75,7 @@
 	margin-right: 15px;
 	& img {
 		width: 100%;
-		min-width: 115px;
+		min-width: 130px;
 		height: 90px;
 		object-fit: cover;
 		border-radius: 10px;
@@ -74,7 +83,7 @@
 }
 
 .technology-card {
-	padding: 25px 40px 40px 35px;
+	padding: 20px 40px 40px 35px;
 	background: #f8f8fa;
 	border-radius: 10px;
 }
@@ -105,7 +114,7 @@
 .card-technology-text {
 	& ul {
 		& li {
-			margin-bottom: 25px;
+			margin-bottom: 27px;
 			&:last-child {
 				margin-bottom: 0;
 			}

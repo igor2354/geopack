@@ -1,39 +1,39 @@
 .certification {
-	padding: 120px 0;
+	padding: 119px 0 118px 0;
 	& .certification-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: 0.773fr 1fr;
+		grid-gap: 60px;
 		& .sertificates {
-			width: 50%;
 		}
 		& .title-h2 {
-			margin-bottom: 40px;
+			margin-bottom: 46px;
 		}
 		& .sertificate-list {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			flex-wrap: wrap;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 30px;
+			grid-row-gap: 36px;
 			& .sertificate-item {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-				align-items: top;
 				position: relative;
-				width: 50%;
-				margin-bottom: 30px;
 				& .cut-img {
 					height: 200px;
 					overflow: hidden;
 					z-index: 10;
 
 					& .full-certificate-link {
+						height: 100%;
 						display: block;
 					}
 
 					& .sertificate-img {
-						width: 170px;
+						width: 178px;
+						height: 100%;
+						object-fit: cover;
+						object-position: top;
 						display: block;
 						margin-left: auto;
 						margin-right: auto;
@@ -46,7 +46,7 @@
 				}
 				& .grey-round-square {
 					position: absolute;
-					width: 90%;
+					width: 100%;
 					height: 170px;
 					left: 50%;
 					transform: translate(-50%, 0);
@@ -58,23 +58,23 @@
 		}
 
 		& .complaints-form {
-			width: 50%;
 			& .blue-container {
 				background: #484d97;
 				border-radius: 4px;
 				& .title-h2 {
 					color: #fff;
+					margin-bottom: 37px;
 				}
 				& .padding-container {
-					padding: 45px;
+					padding: 44px 46px 43px 45px;
 					& .form-order-row {
 						display: grid;
 						grid-template-columns: 1fr 1fr;
 						grid-gap: 20px;
-						margin-bottom: 20px;
+						margin-bottom: 36px;
 						& .form-order-column:first-child {
 							display: grid;
-							grid-gap: 20px;
+							grid-gap: 25px;
 						}
 						& .form-order-wrap-input {
 							height: 100%;
@@ -82,7 +82,7 @@
 
 						& .wrap-input input {
 							width: 100%;
-							padding: 21px 25px;
+							padding: 22px 25px;
 							font-size: 14px;
 							line-height: 1.2;
 							border-radius: 4px;
@@ -115,10 +115,12 @@
 					}
 
 					& .form-order-group {
-						display: flex;
-						justify-content: space-between;
-						align-items: center;
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						grid-gap: 20px;
 						& .form-order-checkbox {
+							margin-right: 20px;
+							max-width: 259px;
 							color: rgba(255, 255, 255, 0.5);
 							font-size: 12px;
 							line-height: 1.5;
@@ -126,9 +128,10 @@
 								color: rgba(255, 255, 255, 1);
 								font-size: 12px;
 								line-height: 1.5;
-								text-decoration: underline;
+								border-bottom: 1px solid #fff;
+								transition: all 0.3s ease;
 								&:hover {
-									text-decoration: none;
+									border-color: transparent;
 								}
 							}
 						}
@@ -136,20 +139,14 @@
 							display: inline-block;
 							position: relative;
 							text-align: left;
-							max-width: 230px;
+							text-align: center;
 							width: 100%;
-							padding: 20px 80px;
+							padding: 19px 80px;
 							font-weight: 600;
 							color: #484d97;
 							background: #ffffff;
 							border: 1px solid transparent;
 							border-radius: 4px;
-							transition: all 0.3s ease;
-							&:hover {
-								color: #fff;
-								background: #484d97;
-								border-color: #fff;
-							}
 						}
 					}
 				}
@@ -164,12 +161,30 @@
 	}
 
 	.certification .certification-container .complaints-form .blue-container .padding-container .form-order-group {
-		flex-direction: column;
+		grid-template-columns: 1fr;
+		justify-items: center;
 	}
 
 	.certification .certification-container .complaints-form .blue-container .padding-container .form-order-group .form-order-checkbox {
+		margin-right: 0;
 		margin-bottom: 20px;
 		text-align: center;
+		max-width: initial;
+	}
+
+	.certification .certification-container .complaints-form .blue-container .padding-container .form-order-group .main-btn {
+		max-width: 230px;
+	}
+}
+
+@media (max-width: 900px) {
+	.certification .certification-container {
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+	}
+
+	.certification .certification-container .sertificate-list .sertificate-item .grey-round-square {
+		width: 70%;
 	}
 }
 
@@ -178,24 +193,24 @@
 		padding: 40px 0;
 	}
 
-	.certification .certification-container {
-		flex-direction: column;
-	}
-
-	.certification .certification-container .sertificates {
-		width: 100%;
-	}
-
-	.certification .certification-container .complaints-form {
+	.certification .certification-container .sertificate-list .sertificate-item .grey-round-square {
 		width: 100%;
 	}
 
 	.certification .certification-container .title-h2 {
 		margin-bottom: 20px;
 	}
+
+	.certification .certification-container .complaints-form .blue-container .title-h2 {
+		margin-bottom: 20px;
+	}
 }
 
 @media (max-width: 500px) {
+	.certification .certification-container .complaints-form .blue-container .padding-container .form-order-group .form-order-checkbox {
+		margin-bottom: 10px;
+	}
+
 	.certification .certification-container .complaints-form .blue-container .padding-container {
 		padding: 15px;
 	}

@@ -31,7 +31,7 @@
 
 	& .company-info-title {
 		position: relative;
-		padding: 20px 0 5px 0;
+		padding: 17px 0 0px 0;
 
 		z-index: 2;
 	}
@@ -45,6 +45,10 @@
 	}
 
 	&.--bg-image {
+		& .company-info-container {
+			padding: 35px 0 55px 0;
+		}
+
 		& .company-info-title {
 			color: #fff;
 			padding: 20px 0 25px 0;
