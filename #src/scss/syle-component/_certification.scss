@@ -177,14 +177,24 @@
 	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1170px) {
 	.certification .certification-container {
 		grid-template-columns: 1fr;
 		grid-gap: 30px;
 	}
 
+	.certification .certification-container .sertificate-list {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (max-width: 900px) {
 	.certification .certification-container .sertificate-list .sertificate-item .grey-round-square {
 		width: 70%;
+	}
+
+	.certification .certification-container .sertificate-list {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 

@@ -30,10 +30,6 @@
 					transform: translateY(-50%);
 					background: url("../img/icon-arrow-news.svg") no-repeat;
 				}
-
-				&:hover {
-					text-decoration: underline;
-				}
 			}
 		}
 
@@ -230,6 +226,14 @@
 	.news .news-container .news-articles .articles {
 		max-width: 300px;
 		margin: 0 auto;
+	}
+
+	.news .news-container .articles-navigation {
+		order: 2;
+	}
+
+	.news .news-container .news-navigation {
+		order: 1;
 	}
 }
 

@@ -6,12 +6,24 @@ $(document).ready(function () {
 
 		$(this).parent().find(".js-tab").removeClass("active");
 
-		$(elementId).parent().find(".js-tab-item").removeClass("active");
-
 		$(this).addClass("active");
 
-		$(elementId).addClass("active");
+		new Promise((resolve, reject) => {
+			$(elementId).parent().find(".js-tab-item").removeClass("active");
+			setTimeout(() => {
+				$(elementId).parent().find(".js-tab-item").css({ display: "none" });
+				resolve();
+			}, 200);
+		}).then(() => {
+			setTimeout(() => {
+				$(elementId).addClass("active");
+			}, 100);
+
+			$(elementId).css({ display: "block" });
+		});
 	});
+
+	$(".js-tab").eq(0).click();
 
 	$(".lightgallery").lightGallery({
 		selector: "a",

@@ -35,8 +35,8 @@
 		display: none;
 		cursor: pointer;
 		position: absolute;
-		top: 15px;
-		right: 15px;
+		top: 10px;
+		right: 10px;
 		width: 30px;
 		height: 30px;
 		transition: all 0.3s ease;
@@ -137,12 +137,12 @@
 	.header {
 		opacity: 0;
 		visibility: hidden;
-		left: -100%;
+		right: -100%;
 		transition: all 0.3s ease;
 		&.active {
 			opacity: 1;
 			visibility: visible;
-			left: 0;
+			right: 0;
 		}
 
 		& .header-close-menu {
@@ -150,7 +150,7 @@
 		}
 
 		& .header-container {
-			padding: 10px 15px;
+			padding: 30px 15px 10px 15px;
 			& .menu-link {
 				padding: 10px;
 			}
@@ -161,9 +161,22 @@
 			min-height: 45px;
 			font-size: 12px;
 		}
+
+		& .hot-line {
+			display: none;
+		}
+
+		& .tel {
+			display: none;
+		}
+
+		& .email {
+			display: none;
+		}
 	}
 
 	.logo-header {
+		display: none;
 		padding: 15px 90px;
 		text-align: center;
 		& img {

@@ -100,11 +100,18 @@
 }
 
 .production__tab-item {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(-300px);
+	transition: all 0.3s ease;
+
 	display: none;
 }
 
 .production__tab-item.active {
-	display: block;
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0px);
 }
 
 @media (min-width: 768px) {

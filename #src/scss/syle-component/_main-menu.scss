@@ -26,9 +26,61 @@
 .mobile-header-burger {
 }
 
+.mobile-header-group-tel {
+	display: flex;
+	align-items: center;
+	& a {
+		&:first-child {
+			margin-right: 40px;
+		}
+
+		&.tel {
+			font-size: 18px;
+			line-height: 1.4;
+			font-weight: 600;
+			color: #484d97;
+		}
+
+		&.email {
+			color: #484d97;
+		}
+	}
+}
+
 @media (max-width: 1200px) {
 	.mobile-header {
 		display: block;
+	}
+}
+
+@media (max-width: 768px) {
+	.mobile-header-group-tel {
+		flex-direction: column;
+		& a {
+			&.tel {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.mobile-header-logo {
+		& img {
+			height: 35px;
+		}
+	}
+
+	.mobile-header-group-tel {
+		& a {
+			&.tel {
+				font-size: 12px;
+			}
+
+			&.email {
+				font-size: 11px;
+			}
+		}
 	}
 }
 
@@ -79,4 +131,10 @@
 }
 .ham8.active .bottom {
 	stroke-dashoffset: -64px;
+}
+
+@media (max-width: 500px) {
+	.ham {
+		width: 40px;
+	}
 }
