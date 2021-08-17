@@ -102,6 +102,25 @@
 		& .slider-big {
 			margin-bottom: 30px;
 		}
+
+		& .product-swiper-slide-big {
+			background: #f8f8fa;
+			border-radius: 10px;
+		}
+
+		& .product-swiper-slide-small {
+			background: #f8f8fa;
+			border-radius: 10px;
+			& img {
+				border: 1px solid transparent;
+			}
+		}
+
+		& .product-swiper-slide-small.swiper-slide-thumb-active {
+			& img {
+				border-color: #484d97;
+			}
+		}
 	}
 
 	.product-description {

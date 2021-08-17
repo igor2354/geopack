@@ -302,6 +302,11 @@
 		}
 	}
 
+	.search-vacancy-group .nice-select {
+		height: 48px;
+		line-height: 48px;
+	}
+
 	.card-vacancy-group-one {
 		&::before {
 			content: attr(data-name);
