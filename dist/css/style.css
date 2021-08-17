@@ -698,7 +698,7 @@ p {
   border-bottom: 1px solid rgba(34, 34, 34, 0.07); }
 
 .logo-header {
-  padding: 30px 90px; }
+  padding: 20px 90px; }
 
 .header-container a {
   color: #484d97; }
@@ -1071,6 +1071,10 @@ p {
     font-size: calc(18px + 22 * ((100vw - 320px) / 856)); }
   .facts-numbers .facts-container .fact-header span {
     font-size: calc(16px + 6 * ((100vw - 320px) / 856)); } }
+
+@media (max-width: 900px) {
+  .facts-numbers {
+    padding: 0 0 40px 0; } }
 
 @media (max-width: 768px) {
   .facts-numbers {

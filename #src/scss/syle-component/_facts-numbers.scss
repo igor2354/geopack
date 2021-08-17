@@ -113,6 +113,12 @@
 	}
 }
 
+@media (max-width: 900px) {
+	.facts-numbers {
+		padding: 0 0 40px 0;
+	}
+}
+
 @media (max-width: 768px) {
 	.facts-numbers {
 		padding: 0 0 20px 0;
