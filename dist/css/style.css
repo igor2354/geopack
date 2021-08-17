@@ -662,8 +662,8 @@ p {
     position: absolute;
     top: 15px;
     right: 15px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
@@ -672,7 +672,7 @@ p {
       position: absolute;
       top: 50%;
       left: 0;
-      width: 40px;
+      width: 30px;
       height: 1px;
       background: #000;
       -webkit-transform: translateY(-50%) rotate(45deg);
@@ -683,7 +683,7 @@ p {
       position: absolute;
       top: 50%;
       left: 0;
-      width: 40px;
+      width: 30px;
       height: 1px;
       background: #000;
       -webkit-transform: translateY(-50%) rotate(-45deg);
