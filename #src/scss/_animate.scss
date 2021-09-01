@@ -131,6 +131,7 @@
 		transition: transform 0.5s cubic-bezier(0.48, 0, 0.12, 1);
 		content: "";
 	}
+	
 	&::after {
 		padding: 0 20px;
 		position: absolute;
